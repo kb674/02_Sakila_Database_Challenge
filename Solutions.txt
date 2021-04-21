@@ -95,4 +95,5 @@ SELECT DISTINCT language_id, name FROM language ORDER BY name DESC;
 SELECT actor_id, first_name, last_name FROM actor WHERE last_name LIKE '%son';
 
 
-	25. Which category contains the most films?
+25. Which category contains the most films?
+SELECT category, count(title) FROM film_list GROUP BY category;
