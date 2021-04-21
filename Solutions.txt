@@ -83,8 +83,8 @@ SELECT first_name, last_name, film_info FROM actor_info WHERE first_name = 'FRED
 SELECT first_name, last_name, film_info FROM actor_info WHERE first_name = 'FRED' and second_name = 'COSTNER';
 
 
-	22. How many distinct countries are there?
-	SELECT DISTINCT country_id, country FROM country;
+22. How many distinct countries are there?
+SELECT count(country) FROM country;
 
 
 23. List the name of every language in reverse-alphabetical order.
