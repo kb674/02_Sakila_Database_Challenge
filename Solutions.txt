@@ -59,7 +59,8 @@ SELECT film_ID, title FROM film WHERE special_features = 'Deleted Scenes';
 SELECT AVG(length) FROM film;
 
 
-	16. List the average runtime for every film category.
+16. List the average runtime for every film category.
+SELECT category, AVG(length) FROM film_list GROUP BY category;
 
 
 17. List all movies featuring a robot.
