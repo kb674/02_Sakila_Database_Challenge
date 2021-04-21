@@ -49,7 +49,10 @@ SELECT film_ID, title FROM film WHERE special_features = 'Deleted Scenes';
 	SELECT last_name FROM actor ORDER BY last_name DESC;
 
 
-	13. Which actor has appeared in the most films?
+13. Which actor has appeared in the most films?
+SELECT first_name, COUNT(film_info) FROM actor_info GROUP BY first_name;
+SELECT first_name, COUNT(film_info) FROM actor_info GROUP BY first_name ORDER BY COUNT(film_info) DESC;
+SELECT first_name, COUNT(film_info) FROM actor_info GROUP BY first_name ORDER BY COUNT(film_info) DESC LIMIT 6;
 
 
 	14. When is 'Academy Dinosaur' due?
